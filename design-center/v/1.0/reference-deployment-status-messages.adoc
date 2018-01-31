@@ -1,7 +1,7 @@
 = Reference: Application Status Messages
 :keywords: mozart, deploy, environments
 
-When creating Mule applications in Design Center, the top navbarhows the state of your application. It also displays alerts about possible runtime errors.
+When creating Mule applications in Design Center, the top navbar shows the state of your application. It also displays alerts about possible runtime errors.
 
 The table below lists all common application states.
 
