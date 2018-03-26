@@ -76,7 +76,7 @@ In these examples:
 * The `toUpper` variable maps an input parameter to the DataWeave `upper` function. So it is used like a more traditional function in other languages as `toUpper(aString)`.
 * The `combined` var accepts a function name as an input parameter, then applies that function name to the second `msg` argument. The second `msg` argument is optional because a default value `universe` is specified.
 
-The result of the expression `combined(toUpper, " world")` is to apply the `toUpper` function defined earlier in the header to the `msg` parameter value `world`. The supplied second argument `world` overrides the `msg="universe"` default value, so the result is `HELLO WORLD`.
+The result of the expression `combined(toUpper, " hello")` is to apply the `toUpper` function defined earlier in the header to the `msg` parameter value `hello`. The supplied second argument `hello` overrides the `msg="universe"` default value, so the result is `HELLO WORLD`.
 
 The final `combined2` key is the expression `combined((x) -> lower(x) ++ " today", msg)`. Now, instead of passing in an already defined function, you can define the lambda expression “anonymously”, without any name. Lambda expressions allow you to reuse more generalized expressions in different contexts. In this example, the combined key used an already defined variable named `toUpper`, while the `combined2` key defines the expression “inplace” at the time the function is called. So in this example, instead of converting the string `world` to `HELLO WORLD`, it is instead converted to `hello world today`å.
 
