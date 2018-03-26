@@ -175,7 +175,7 @@ When you import a `.dwl` file, its body is considered to be an additional functi
 import modules::MyMapping
 output application/json
 ---
-MyMapping::main({"payload": {foo: "bar"}}
+MyMapping::main({"payload": {foo: "bar"}})
 ----
 
 .Output
