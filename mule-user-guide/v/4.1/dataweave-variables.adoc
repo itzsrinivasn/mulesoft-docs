@@ -39,7 +39,7 @@ var combined = (function, msg="universe") -> function(msg ++ " world")
    msg: msg,
    msg2: msg2(),
    toUpper: toUpper(msg),
-   combined: combined(toUpper, msg="world"),
+   combined: combined(toUpper, msg="hello"),
    combined2: combined((x) -> lower(x) ++ " today", msg)
 ]
 ----
